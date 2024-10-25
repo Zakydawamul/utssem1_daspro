@@ -25,6 +25,8 @@ public class ManajemenNilaiSiswa_07 {
             totalNilai += nilai;
             jumlahSiswa++;
         }
+
+    
         if (jumlahSiswa == 0) {
             System.out.println("Tidak ada data siswa yang dimasukkan.");
             return;
@@ -33,6 +35,7 @@ public class ManajemenNilaiSiswa_07 {
         double rataRata = totalNilai / jumlahSiswa;
         int diAtasRataRata = 0;
 
+        
         System.out.println("\nEvaluasi nilai siswa:");
         for (int i = 0; i < jumlahSiswa; i++) {
             System.out.print("Masukkan nilai siswa ke-" + (i + 1) + ": ");
@@ -54,6 +57,7 @@ public class ManajemenNilaiSiswa_07 {
         System.out.println("Jumlah siswa yang mendapatkan nilai di atas rata-rata: " + diAtasRataRata);
         System.out.println("Jumlah siswa yang mendapatkan nilai di bawah rata-rata: " + (jumlahSiswa - diAtasRataRata));
 
+        
         if (diAtasRataRata > jumlahSiswa / 2) {
             System.out.println("Kelas ini memiliki mayoritas siswa dengan nilai di atas rata-rata.");
         } else {
